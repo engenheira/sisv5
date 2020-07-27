@@ -18,7 +18,10 @@
 				<img src="<?=base_url(); ?>/assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
 			</div>
 			<div class="info">
-				<a href="#" class="d-block">Alexander Pierce</a>
+				<a href="#" class="d-block">
+					<?= $this->session->userdata("name");?>
+					<?= $this->session->userdata("last_name");?>
+				</a>
 			</div>
 		</div>
 
@@ -546,9 +549,9 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">
+					<a href="<?= base_url(); ?>/auth/logout" class="nav-link">
 						<i class="nav-icon far fa-circle text-info"></i>
-						<p>Informational</p>
+						<p>Sair</p>
 					</a>
 				</li>
 			</ul>

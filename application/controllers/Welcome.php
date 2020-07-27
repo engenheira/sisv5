@@ -20,9 +20,15 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('partials/header');
-		$this->load->view('partials/aside');
-		$this->load->view('admin/dashboard');
-		$this->load->view('partials/footer');
+//		$this->load->view('partials/header');
+//		$this->load->view('partials/aside');
+//		$this->load->view('admin/dashboard');
+//		$this->load->view('partials/footer');
+		$this->load->view('admin/register');
+	}
+
+	public function login()
+	{
+		$this->load->view('admin/login');
 	}
 }
