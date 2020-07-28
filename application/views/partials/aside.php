@@ -155,15 +155,15 @@
 					<a href="#" class="nav-link">
 						<i class="nav-icon fas fa-tree"></i>
 						<p>
-							UI Elements
+							Gerenciamento
 							<i class="fas fa-angle-left right"></i>
 						</p>
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="../UI/general.html" class="nav-link">
+							<a href="<?= base_url();?>management/category" class="nav-link">
 								<i class="far fa-circle nav-icon"></i>
-								<p>General</p>
+								<p>Categorias</p>
 							</a>
 						</li>
 						<li class="nav-item">

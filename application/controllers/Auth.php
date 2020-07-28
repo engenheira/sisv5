@@ -30,6 +30,7 @@ class Auth extends CI_Controller {
 		$response = $this->User->login($username, sha1($password));
 
 		if (!$response){
+			$this->session->set_flashdata("error", "Usuário e/ou senha incorretos");
 			redirect(base_url());
 		}else{
 			$data = array(

@@ -29,6 +29,13 @@
 		<div class="card-body login-card-body">
 			<p class="login-box-msg">Faça o login para começar</p>
 
+			<?php if($this->session->flashdata("error")): ?>
+				<div class="alert alert-danger">
+					<p>
+						<?= $this->session->flashdata("error") ?></p>
+				</div>
+			<?php endif; ?>
+
 			<form action="<?= base_url(); ?>/auth/login" method="post">
 
 				<div class="input-group mb-3">
